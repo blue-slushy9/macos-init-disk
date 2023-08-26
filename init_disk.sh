@@ -28,3 +28,9 @@ cp ~/Desktop/ /Volumes/DRIVE/
 # When your processes are all complete (view Terminal), you can eject the drive
 # with the below command, if you so wish;
 diskutil eject /dev/diskX
+
+# Encrypt the drive;
+diskutil apfs encryptVolume /dev/disk2s2 -user disk -passphrase
+
+# Mount the disk;
+diskutil mount /dev/diskX
